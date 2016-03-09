@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<title>Page</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="favicon.png">
+
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+</head>
+<body>
+	<div>
+		<form>
+			<div class="form-top"></div>
+			<div class="form-container">
+				<div class="input-holder">
+					<label></label>
+					<input type="text"/>
+				</div>
+				<div class="input-holder">
+					<label></label>
+					<input type="text"/>
+				</div>
+				<div class="input-holder">
+					<label></label>
+					<input type="text"/>
+				</div>
+				<div class="input-holder">
+					<label></label>
+					<input type="text"/>
+				</div>
+				<div class="input-holder">
+					<label></label>
+					<input type="text"/>
+				</div>
+				<div class="input-holder">
+					<label></label>
+					<input type="text"/>
+				</div>
+				<div class="input-holder">
+					<label></label>
+					<input type="text"/>
+				</div>
+				<div class="input-holder">
+					<label></label>
+					<input type="text"/>
+				</div>
+				<div class="input-holder">
+					<label></label>
+					<input type="text"/>
+				</div>
+				<div class="input-holder">
+					<input type="submit" class="form-btn"/>
+				</div>			
+			</div>	
+		</form>
+	</div>
+	<div>
+		<script id="prod-desc" type="text/x-handlebars-template">
+			{{#each proddesc}}
+			    <!-- Here the context is each individual person. So we can access its properties directly: -->
+			    <p>{{this.title}} {{this.assets}}</p>
+			  {{/each}}
+		</script>
+		<div class="prod-content"></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<footer>
+		<p>
+			<a href="">TERMS</a>
+			<a href="">PRIVACY POLICY</a>
+			<a href="">CONDITIONS</a>
+		</p>
+	</footer>
+	<script type="text/javascript" src="assets/vendor/jquery-1.12.0.min.js"></script>
+	<!--<script type="text/javascript" src="assets/js/handlebars.min-latest.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
