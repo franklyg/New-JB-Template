@@ -34,7 +34,6 @@ h3{}
 	font-size: 11px;
 	line-height: normal;
 }
-
 footer{
 	bottom: 0px;
 	width: 100%;
@@ -144,15 +143,27 @@ form .form-container .input-holder input[type="submit"]{
 	cursor: pointer;
 	margin: 20px 0;
 }
-form .form-container .input-holder .card-logos{
+form .form-container .input-holder .card-logos {
 	display: block;
+}
+/* Banner */
+.banner{
+	position: relative;
+	padding: 30px 0;
+	border-bottom: 1px solid #d1d1d1;
+	margin-bottom: 25px;
 }
 /* Steps */
 .steps{
 	width: 295px;
+	position: relative;
+	left: 300px;
 }
 .steps .step{
-	width: 100px;
+	position: absolute;
+	top: -11px;
+	z-index: 10;
+	margin: 0px;
 }
 .steps .step .step-inner{
 	width: 20px; height: 20px;
@@ -172,11 +183,17 @@ form .form-container .input-holder .card-logos{
     height: 100%;
     box-shadow: 0 1px 1px 0px #000;
 }
+.steps .step-1{
+	left: -27px;
+}
+.steps .step-2{
+	left: 135px;
+}
+.steps .step-3{
+	right: -27px;
+}
 .steps .step-1 .step-inner{
 	box-shadow: 3px 0px 5px -3px #000 inset;
-}
-.steps .step-2 .step-inner{
-	box-shadow: 3px 0px 7px -3px #000 inset;
 }
 .steps .step-3 .step-inner{
 	box-shadow: -3px 0px 5px -3px #000 inset;	
@@ -190,7 +207,7 @@ form .form-container .input-holder .card-logos{
 	position: relative;
 }
 .steps .bar .slider{
-	position: absolute;
+	position: absolute;		
 }
 /*
 ** >> Landing Page
@@ -244,6 +261,11 @@ form .form-container .input-holder .card-logos{
 }
 #checkout-body .wrapper .info .info-content p{
 	padding-bottom: 10px;
+	color: #5a5a5a;
+	font-size: 14px;
+}
+#checkout-body .wrapper .info .info-content p:first-child{
+	font-size: 17px;
 }
 #checkout-body .wrapper .prod-info{
 	padding-top: 20px;
@@ -255,6 +277,7 @@ form .form-container .input-holder .card-logos{
 #checkout-body .wrapper .prod-info .prod-info-inner .prod-desc{
 	width: 325px;
 	padding-left: 40px;
+	color: #5a5a5a;
 }
 #checkout-body .wrapper .prod-info .prod-info-inner .prod-desc .prices div{
 	border-bottom: 1px solid #ededed;
