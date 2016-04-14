@@ -5,6 +5,9 @@
 /*
 ** >> Global Styles 
 */
+*{
+	box-sizing: border-box;
+}
 html,
 body{
 	position: relative;
@@ -97,7 +100,6 @@ form .form-container .input-holder label{
 	display: inline-block;
 }
 form .form-container .input-holder input[type="text"]{
-	box-sizing: border-box;
 	height: 32px;
 	border-radius: 5px;
 	display: inline-block;
@@ -212,9 +214,39 @@ form .form-container .input-holder .card-logos {
 /*
 ** >> Landing Page
 */
-#main-body{}
-#main-body .wrapper{}
-
+#index-body{
+	background: url(../img/bg.jpg) top center no-repeat;
+}
+#index-body p{
+	font-size: 14px;
+	line-height: normal;
+} 
+#index-body .wrapper{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+#index-body .top{
+	height: 800px;
+}
+#index-body .wrapper form{
+	width: 313px;
+	float: right;
+}
+#index-body .wrapper #section-1{
+	background: white;
+}
+#index-body .wrapper #section-1 .science{
+	padding: 90px 40px;
+}
+#index-body .wrapper #section-1 .science .content,
+#index-body .wrapper #section-1 .science img.scientist{
+	display: inline-block;
+	vertical-align: top;
+}
+#index-body .wrapper #section-1 .science .content{
+	width: 450px;
+}
 /*
 ** >> Checkout Page & After Downsell Page
 */
@@ -235,7 +267,7 @@ form .form-container .input-holder .card-logos {
 }
 #checkout-body .wrapper form{
 	float: right;
-	width: 314px;
+	width: 320px;
 }
 #checkout-body .wrapper  form .form-container .input-holder{
 	padding-bottom: 15px;
