@@ -155,11 +155,34 @@ form .form-container .input-holder .card-logos {
 	border-bottom: 1px solid #d1d1d1;
 	margin-bottom: 25px;
 }
+.banner .logo{
+	margin-left: 35px;
+	vertical-align: middle;
+	display: inline-block;
+}
+.banner .demographic{
+	float: right;
+	margin-right: 45px;
+}
+.banner .demographic p,
+.banner .demographic img.flag{
+	display: inline-block;
+}
+.banner .demographic p{
+	width: 230px;
+	font-weight: bold;
+	font-size: 14px;
+}
+.banner .demographic img.flag{
+	margin-right: 10px;
+}
 /* Steps */
 .steps{
 	width: 295px;
-	position: relative;
-	left: 300px;
+    position: relative;
+    left: 90px;
+    display: inline-block;
+    vertical-align: middle;
 }
 .steps .step{
 	position: absolute;
@@ -168,14 +191,14 @@ form .form-container .input-holder .card-logos {
 	margin: 0px;
 }
 .steps .step .step-inner{
-	width: 20px; height: 20px;
-	padding: 4px;
+	width: 25px; height: 25px;
+	padding: 3px;
 	background: #c9c5c0;
 	border-radius: 50%;
 	text-align: center;
 	color: #fff;
 	font-weight: bold;
-	text-shadow: 1px 1px 2px #000;
+	text-shadow: .5px 1px 2px #000;
 	font-size: 13px;
 }
 .steps .step .step-inner p.current{
@@ -186,13 +209,13 @@ form .form-container .input-holder .card-logos {
     box-shadow: 0 1px 1px 0px #000;
 }
 .steps .step-1{
-	left: -27px;
+	left: -24px;
 }
 .steps .step-2{
 	left: 135px;
 }
 .steps .step-3{
-	right: -27px;
+	right: -24px;
 }
 .steps .step-1 .step-inner{
 	box-shadow: 3px 0px 5px -3px #000 inset;
@@ -219,11 +242,69 @@ form .form-container .input-holder .card-logos {
 }
 #index-body p{
 	font-size: 14px;
-	line-height: normal;
+	line-height: 21px;
 } 
 #index-body h2,
 #index-body h3{
 	font-family: 'Montserrat', Arial;
+}
+#index-body h2.section-header{
+	background: #000;
+	color: white;
+	font-size: 22px;
+	display: inline-block;
+    padding-right: 20px;
+}
+#index-body h2.section-header span{
+	background: #ed145b;
+	display: inline-table;
+	padding: 20px 10px 20px 20px;
+	margin-right: 25px;
+	position: relative;
+	font-weight: bold;
+}
+#index-body h2.section-header span:after{
+	content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0px;
+    right: -25px;
+    border-top: 62px solid #ed145b;
+    border-right: 25px solid transparent;
+}
+#index-body .cta{
+	background: #595f70;
+	width: 100%;
+	padding: 20px 50px; 
+	font-family: 'Montserrat', Arial;
+}
+#index-body .cta .content{
+	float: left;
+}
+#index-body .cta .content p{
+	text-align: center;
+	color: #fff;
+}
+#index-body .cta .content p:first-child{
+	font-size: 21px;
+	font-weight: bold;
+	letter-spacing: 4px;
+	line-height: 38px;
+}
+#index-body .cta .content p:last-child{
+	font-size: 16px;
+	letter-spacing: 2.3px;
+}
+#index-body .cta a{
+	background: #00efc5;
+	font-weight: bold;
+	font-size: 22px;
+	padding: 20px 30px;
+	border-radius: 5px;
+	float: right; 
+	color: #000;
+	text-decoration: none;
 }
 #index-body .wrapper{
 	width: 1000px;
@@ -237,19 +318,24 @@ form .form-container .input-holder .card-logos {
 	width: 313px;
 	float: right;
 }
+#index-body .wrapper #section-1,
+#index-body .wrapper #section-2,
+#index-body .wrapper #section-3{
+	position: relative;
+}
 #index-body .wrapper #section-1{
 	background: white;
+	margin-top: 30px;
 }
 #index-body .wrapper #section-1 .science{
-	padding: 90px 40px;
-}
-#index-body .wrapper #section-1 .science .content,
-#index-body .wrapper #section-1 .science img.scientist{
-	display: inline-block;
-	vertical-align: top;
+	padding: 40px 50px 50px 50px;
 }
 #index-body .wrapper #section-1 .science .content{
 	width: 450px;
+	margin-top: 25px;
+}
+#index-body .wrapper #section-1 .science .content p{
+	margin-bottom: 65px;
 }
 #index-body .wrapper #section-1 .points-container{
 	background: url(../img/points-bg.jpg) top center no-repeat; 
@@ -308,7 +394,7 @@ form .form-container .input-holder .card-logos {
 	margin-top: 40px;
 }
 #index-body .wrapper #section-2 .exclusive{
-	padding: 0 50px;
+	padding: 40px 50px 30px 50px;
 }
 #index-body .wrapper #section-2 .exclusive .content{
 	width: 400px;
@@ -316,17 +402,53 @@ form .form-container .input-holder .card-logos {
 #index-body .wrapper #section-2 .exclusive .content p{
 	margin-bottom: 20px;
 }
+#index-body .wrapper #section-2 .exclusive .content ul{
+	margin-bottom: 20px;
+}
+#index-body .wrapper #section-2 .exclusive .content ul li{
+	font-family: 'Montserrat', Arial;
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+#index-body .wrapper #section-2 .exclusive .content ul li span{
+	background: #4cdbd9;
+	width: 9px;
+	height: 9px;
+	display: inline-block;
+	margin-right: 20px;
+	position: relative;
+	top: -2px;
+}
 #index-body .wrapper #section-2 .exclusive .trial-image{
 	margin-right: -40px;
+	margin-top: -110px;
 }
 #index-body .wrapper #section-2 .spotlight .spotlight-content{
 	width: 494px;	
 }
 #index-body .wrapper #section-2 .spotlight .spotlight-content .content{
-	padding: 45px;
+	padding: 25px 45px;
+}
+#index-body .wrapper #section-2 .spotlight .spotlight-content .content h3{
+	margin-bottom: 20px;
+	font-size: 20px;
 }
 #index-body .wrapper #section-2 .spotlight .spotlight-content .content p{
 	margin-bottom: 20px;
+}
+#index-body .wrapper #section-2 .spotlight .spotlight-content .content img.quote{
+	margin: 0 auto 20px auto;
+	display: block;
+}
+#index-body .wrapper .words {
+	margin-top: 50px;
+}
+#index-body .wrapper .words img.word{
+	display: inline-block;
+	vertical-align: top;
+}
+#index-body .wrapper .words img.word:nth-child(2){
+	padding: 0 5px 0 13px;
 }
 /*
 ** >> Checkout Page & After Downsell Page

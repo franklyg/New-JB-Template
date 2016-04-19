@@ -66,9 +66,16 @@
 					<div class="prod-info-inner">
 						<img src="assets/img/prod.png" class="[Product Name] product shot"/>
 						<div class="prod-desc">
-							<p class="bl">[PRODUCT NAME]</p>
-							<p>Product description</p>
-							<p>Product weight and duration</p>
+							<div id="product-details">
+								<script id="product-description" type="text/x-handlebars-template">	
+								{{#proddesc}}
+								  <p class="bl">{{title}}</p>
+								  <p>{{assets}}</p>
+								  <p>{{description}}</p>
+								{{/proddesc}}
+								</script>
+								<div id="product-content"></div>
+							</div>
 							<div class="prices">
 								<div class="bl">
 									<p>Price</p>
@@ -180,8 +187,8 @@
 		</p>
 	</footer>
 	<script type="text/javascript" src="assets/vendor/jquery-1.12.0.min.js"></script>
-	<!--<script type="text/javascript" src="assets/js/handlebars.min-latest.js"></script>-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+	<!-- <script type="text/javascript" src="assets/js/handlebars.min-latest.js"></script> -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

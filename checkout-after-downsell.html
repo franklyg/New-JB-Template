@@ -21,7 +21,7 @@
 	<div id="checkout-body">
 		<div class="wrapper after">
 			<div class="banner">
-				<img />
+				<img src="assets/img/logo.png" alt="[PRODUCT NAME]" class="logo"/>
 				<div class="steps">					
 					<div class="step step-1">
 						<div class="step-inner">
@@ -46,8 +46,8 @@
 					</div>
 				</div>
 				<div class="demographic">
-					<img />
-					<p></p>
+					<img src="assets/img/flag.png" alt="[COUNTRY]" class="flag"/>
+					<p>Internet Exclusive Offer Available to US Residents Only</p>
 				</div>
 			</div>
 			<div class="left">
@@ -66,9 +66,16 @@
 					<div class="prod-info-inner">
 						<img src="assets/img/prod.png" class="[Product Name] product shot"/>
 						<div class="prod-desc">
-							<p class="bl">[PRODUCT NAME]</p>
-							<p>Product description</p>
-							<p>Product weight and duration</p>
+							<div id="product-details">
+								<script id="product-description" type="text/x-handlebars-template">	
+								{{#proddesc}}
+								  <p class="bl">{{title}}</p>
+								  <p>{{assets}}</p>
+								  <p>{{description}}</p>
+								{{/proddesc}}
+								</script>
+								<div id="product-content"></div>
+							</div>
 							<div class="prices">
 								<div class="bl">
 									<p>Price</p>

@@ -1,19 +1,8 @@
 $(function(){
-	/*
-	Set variables for Handlebars templating
-	*/ 
-    $.ajax({
-        url : 'http://localhost/MAIN/New%20template/content.json',
-        method: 'GET',
-        dataType : 'json',
-        success : function(){
-        	var prodDesc 		 = $('#prod-desc').html();
-        	var prodDescTemplate = Handlebars.compile(prodDesc);
-
-            var context = content;
-            console.log(context)
-            var compiledProdDesc = prodDescTemplate(context);
-            $('.prod-content').html(prodDescTemplate({content:context}));
-        }
-    });
+var source   = $("#product-description").html();
+var template = Handlebars.compile(source);
+var data     = {proddesc:[
+                { title : "[PRODUCT NAME]", assets : "30ml - 30 Day Supply", description : "Anti-Wrinkle Serum"}
+               ]};
+$("#product-content").html(template(data));
 });
