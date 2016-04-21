@@ -18,43 +18,42 @@
 
 </head>
 <body>
-	<div id="checkout-body" class="downsell">
+	<div id="checkout-body">
 		<div class="wrapper after">
 			<div class="banner">
-				<img />
+				<img src="assets/img/logo.png" alt="[PRODUCT NAME]" class="logo"/>
 				<div class="steps">					
 					<div class="step step-1">
 						<div class="step-inner">
 							<p class="current">1</p>
-							<p class="bl"></p>
 						</div>
+						<p class="bl">SHIPPING INFO</p>
 					</div>
 					<div class="step step-2">
 						<div class="step-inner">
 							<p>2</p>
-							<p class="bl"></p>
 						</div>
+						<p class="bl">FINISH ORDER</p>
 					</div>
 					<div class="step step-3">
 						<div class="step-inner">
 							<p>3</p>
-							<p class="bl"></p>
 						</div>
+						<p class="bl">SUMMARY</p>
 					</div>
 					<div class="bar">
 						<div class="slider"></div>
 					</div>
 				</div>
 				<div class="demographic">
-					<img />
-					<p></p>
+					<img src="assets/img/flag.png" alt="[COUNTRY]" class="flag"/>
+					<p>Internet Exclusive Offer Available to US Residents Only</p>
 				</div>
 			</div>
 			<div class="left">
 				<div class="info">
-					<div class="reminder">
-						<img src=""/>
-						<p>13 others are viewing this offer right nw - <span class="bl">0:00</span></p>
+					<div class="reminder">						
+						<p><img src="assets/img/eye.png" alt="eye" class="eye"/> 13 others are viewing this offer right nw - <span class="bl count-up">0:00</span></p>
 					</div>
 					<div class="info-content">
 						<p class="bl">Great Choice, Jane! You’re taking your first step towards a better skin. Act now so you don’t miss out on this offer!</p>
@@ -67,14 +66,12 @@
 						<img src="assets/img/prod.png" class="[Product Name] product shot"/>
 						<div class="prod-desc">
 							<div id="product-details">
-								<script id="product-description" type="text/x-handlebars-template">	
-								{{#proddesc}}
-								  <p class="bl">{{title}}</p>
-								  <p>{{assets}}</p>
-								  <p>{{description}}</p>
-								{{/proddesc}}
+								<script class="product-description" type="text/x-handlebars-template">	
+								  <p class="bl">{{prodname}}</p>				
+								  <p>{{proddesc.assets}}</p>
+								  <p>{{proddesc.description}}</p>
 								</script>
-								<div id="product-content"></div>
+								<div class="product-content"></div>
 							</div>
 							<div class="prices">
 								<div class="bl">
@@ -90,7 +87,7 @@
 									<p>$4.95</p>
 								</div>
 							</div>
-							<img />					
+							<img src="assets/img/delivery.jpg" alt="Delivery icons" class="delivery"/>					
 						</div>
 					</div>
 					<img src="assets/img/cp-arrow.png" alt="CTA Arrow" class="arrow"/>
@@ -106,7 +103,7 @@
 				</div>
 				<div class="form-container">
 					<div class="billing-info">
-						<input type="checkbox"/>
+						<input type="checkbox" checked/>
 						Billing address is the same as shipping			
 					</div>
 				</div>

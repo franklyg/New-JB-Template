@@ -18,7 +18,7 @@
 
 </head>
 <body>
-	<div id="checkout-body">
+	<div id="checkout-body" class="downsell">
 		<div class="wrapper after">
 			<div class="banner">
 				<img src="assets/img/logo.png" alt="[PRODUCT NAME]" class="logo"/>
@@ -26,20 +26,20 @@
 					<div class="step step-1">
 						<div class="step-inner">
 							<p class="current">1</p>
-							<p class="bl"></p>
 						</div>
+						<p class="bl">SHIPPING INFO</p>
 					</div>
 					<div class="step step-2">
 						<div class="step-inner">
 							<p>2</p>
-							<p class="bl"></p>
 						</div>
+						<p class="bl">FINISH ORDER</p>
 					</div>
 					<div class="step step-3">
 						<div class="step-inner">
 							<p>3</p>
-							<p class="bl"></p>
 						</div>
+						<p class="bl">SUMMARY</p>
 					</div>
 					<div class="bar">
 						<div class="slider"></div>
@@ -54,7 +54,7 @@
 				<div class="info">
 					<div class="reminder">
 						<img src=""/>
-						<p>13 others are viewing this offer right nw - <span class="bl">0:00</span></p>
+						<p>13 others are viewing this offer right nw - <span class="bl count-up">0:00</span></p>
 					</div>
 					<div class="info-content">
 						<p class="bl"><span>Great Choice, Jane!</span> You’re taking your first step towards a better skin. Act now so you don’t miss out on this offer!</p>
@@ -67,14 +67,14 @@
 						<img src="assets/img/prod.png" class="[Product Name] product shot"/>
 						<div class="prod-desc">
 							<div id="product-details">
-								<script id="product-description" type="text/x-handlebars-template">	
+								<script class="product-description" type="text/x-handlebars-template">	
 								{{#proddesc}}
 								  <p class="bl">{{title}}</p>
 								  <p>{{assets}}</p>
 								  <p>{{description}}</p>
 								{{/proddesc}}
 								</script>
-								<div id="product-content"></div>
+								<div class="product-content"></div>
 							</div>
 							<div class="prices">
 								<div class="bl">

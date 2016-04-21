@@ -26,20 +26,20 @@
 					<div class="step step-1">
 						<div class="step-inner">
 							<p class="current">1</p>
-							<p class="bl"></p>
 						</div>
+						<p class="bl">SHIPPING INFO</p>
 					</div>
 					<div class="step step-2">
 						<div class="step-inner">
 							<p>2</p>
-							<p class="bl"></p>
 						</div>
+						<p class="bl">FINISH ORDER</p>
 					</div>
 					<div class="step step-3">
 						<div class="step-inner">
 							<p>3</p>
-							<p class="bl"></p>
 						</div>
+						<p class="bl">SUMMARY</p>
 					</div>
 					<div class="bar">
 						<div class="slider"></div>
@@ -54,7 +54,7 @@
 				</div>
 			</div>
 			<div class="thankyou-inner">
-				<img src="assets/img/prod.png" class="[Product Name] product shot"/>
+				<img src="assets/img/prod.png" alt="[Product Name] product shot" class="prod" />
 				<div class="thankyou-info">
 					<h2>ORDER RECEIPT</h2>
 					<div class="order-id">
@@ -63,17 +63,21 @@
 						<p><span class="bl">Items ordered:</span></p>
 					</div>
 					<div class="thankyou-prices">						
-						<p>Erase/Repair HA</p>
-						<p>2% Hyaluronic Anti-Aging Cream </p>
-						<div>
-							<p>30g - 30 Day Supply</p>
+						<script class="product-description" type="text/x-handlebars-template">	
+						  <p class="bl">{{prodname}}</p>				
+						  <p>{{proddesc.assets}}</p>
+						  <p>{{proddesc.description}}</p>
+						</script>
+						<div class="product-content"></div>
+						<div class="prices">
+							<p></p>
 							<p>$0.00</p>
 						</div>
-						<div>
+						<div class="prices">
 							<p>Shipping & Handling:</p>
 							<p>$4.95</p>
 						</div>
-						<div>
+						<div class="prices">
 							<p>TOTAL</p>
 							<p>$4.95</p>
 						</div>

@@ -1,6 +1,6 @@
 /*** >> MAIN CSS FILE << ***/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
 
 /*
 ** >> Global Styles 
@@ -77,6 +77,7 @@ form .form-container{
 }
 form .hidden-fields{
 	display: none;
+	padding-top: 30px;
 }
 form .form-container .billing-info{
 	font-size: 12px; 
@@ -94,7 +95,6 @@ form .form-container .credit-cards p img{
 	vertical-align: middle;
 	padding-left: 10px;
 }
-form .form-container .input-holder{}
 form .form-container .input-holder label{
 	font-size: 12px;
 	display: inline-block;
@@ -121,10 +121,10 @@ form .form-container .input-holder a{
 form .form-container .input-holder select{}
 form .form-container .button{
 	padding: 15px 0;
-	font-size: 10px;
 }
 form .form-container .button p{
 	text-align: center;
+	font-size: 10px !important;
 }
 form .form-container .button p img{
 	vertical-align: middle;
@@ -144,9 +144,16 @@ form .form-container .input-holder input[type="submit"]{
 	box-shadow: 4px 4px 0 0 #7b7b7b;
 	cursor: pointer;
 	margin: 20px 0;
+	position: relative;
+}
+form .form-container .input-holder input[type="submit"]:active{
+	box-shadow: 0px 0px 0 0 #7b7b7b;
+	top: 4px;
 }
 form .form-container .input-holder .card-logos {
 	display: block;
+	margin: 0 auto;
+	padding-bottom: 20px;
 }
 /* Banner */
 .banner{
@@ -162,7 +169,7 @@ form .form-container .input-holder .card-logos {
 }
 .banner .demographic{
 	float: right;
-	margin-right: 45px;
+	margin-right: 25px;
 }
 .banner .demographic p,
 .banner .demographic img.flag{
@@ -214,8 +221,23 @@ form .form-container .input-holder .card-logos {
 .steps .step-2{
 	left: 135px;
 }
+.steps .step-1 .bl,
+.steps .step-2 .bl,
+.steps .step-3 .bl{
+	position: absolute;
+	color: #5a5a5a;
+	text-align: left !important;
+}
+.steps .step-1 .bl,
+.steps .step-2 .bl{
+    left: -45px;
+    width: 200px;
+}
 .steps .step-3{
 	right: -24px;
+}
+.steps .step-3 .bl{ 
+	left: -25px;
 }
 .steps .step-1 .step-inner{
 	box-shadow: 3px 0px 5px -3px #000 inset;
@@ -304,19 +326,88 @@ form .form-container .input-holder .card-logos {
 	border-radius: 5px;
 	float: right; 
 	color: #000;
+	box-shadow: 4px 4px 0 0 #7b7b7b;
 	text-decoration: none;
+	position: relative;
+}
+#index-body .cta a:active{
+	box-shadow: 0px 0px 0 0 #7b7b7b;
+	top: 4px;
 }
 #index-body .wrapper{
 	width: 1000px;
 	margin: 0 auto;
 	position: relative;
 }
+#index-body .warning-banner{
+	position: absolute;
+	width: 100%;
+	background: #ed145b;
+	z-index: 100;
+}
+#index-body .warning-banner .wrapper{
+	width: 750px;
+	padding: 15px 0;
+}
+#index-body .warning-banner .wrapper p{
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+}
 #index-body .top{
 	height: 800px;
 }
 #index-body .wrapper form{
 	width: 313px;
-	float: right;
+	position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+#index-body .wrapper form .form-top h2{
+	font-size: 15px;
+    font-family: 'Open Sans', Arial;
+    font-weight: bold;
+}
+#index-body .wrapper form .form-top .timer{
+    position: relative;
+    font-size: 16px;
+    display: inline-block;
+}
+#index-body .wrapper form .form-top .timer span{
+    color: white;
+    background: black;
+    border-radius: 5px;
+    padding: 4px 4px;
+    margin-right: 2px;
+    font-weight: bold;
+}
+#index-body .wrapper form .form-container .input-holder input[type="text"]{
+	margin-bottom: 14px;
+	height: 31px;
+}
+#index-body .wrapper form .form-container h2,
+#index-body .wrapper form .form-container h3{
+	text-align: center;
+}
+#index-body .wrapper form .form-container h2{
+	padding-top: 15px;
+	font-size: 17px;
+	padding-top: 32px;
+}
+#index-body .wrapper form .form-container h3{
+	padding-bottom: 15px;
+	font-size: 21px;
+	font-weight: bold;
+	padding-bottom: 32px;
+}
+#index-body .wrapper form .form-container .button{
+	padding: 5px 0 30px 0;
+}
+#index-body .wrapper form .form-container .input-holder input[type="submit"]{
+	margin:10px 0 20px 0;
+}
+#index-body .wrapper form .form-container .input-holder .card-logos{
+	padding-bottom: 0px;
 }
 #index-body .wrapper #section-1,
 #index-body .wrapper #section-2,
@@ -420,7 +511,7 @@ form .form-container .input-holder .card-logos {
 	top: -2px;
 }
 #index-body .wrapper #section-2 .exclusive .trial-image{
-	margin-right: -40px;
+	margin-right: -50px;
 	margin-top: -110px;
 }
 #index-body .wrapper #section-2 .spotlight .spotlight-content{
@@ -449,6 +540,23 @@ form .form-container .input-holder .card-logos {
 }
 #index-body .wrapper .words img.word:nth-child(2){
 	padding: 0 5px 0 13px;
+}
+#index-body .wrapper .bottom{
+	background: url(../img/btm-bg.jpg) top center no-repeat;
+	width: 1000px;
+	height: 418px;
+	position: relative;
+	margin-top: 40px;
+}
+#index-body .wrapper .bottom h2.section-header {
+	font-size: 19px;
+}
+#index-body .wrapper .bottom h2.section-header span{
+	padding: 15px 20px 15px 217px;
+}
+#index-body .wrapper .bottom h2.section-header span:after{
+    border-top: 50px solid #ed145b;
+    border-right: 25px solid transparent;
 }
 /*
 ** >> Checkout Page & After Downsell Page
@@ -494,6 +602,10 @@ form .form-container .input-holder .card-logos {
 #checkout-body .wrapper .info .reminder p{
 	text-align: center;
 }
+#checkout-body .wrapper .info .reminder p img.eye{
+	vertical-align: middle;
+	padding-right: 5px;
+}
 #checkout-body .wrapper .info .info-content p{
 	padding-bottom: 10px;
 	color: #5a5a5a;
@@ -501,6 +613,21 @@ form .form-container .input-holder .card-logos {
 }
 #checkout-body .wrapper .info .info-content p:first-child{
 	font-size: 17px;
+}
+#checkout-body .wrapper .info .info-content span.availability{
+	padding: 2px;
+	background: #fff;
+	border: #c2c2c2;
+	box-shadow: 0 0 3px 0px #000;
+	margin: 0 5px;
+	display: inline-flex;
+}
+#checkout-body .wrapper .info .info-content span.availability span{
+	width: 10px; height: 10px;
+	display: inline-block;
+}
+#checkout-body .wrapper .info .info-content span.availability span:first-child{
+	background: #ff0000; 
 }
 #checkout-body .wrapper .prod-info{
 	padding-top: 20px;
@@ -512,11 +639,12 @@ form .form-container .input-holder .card-logos {
 #checkout-body .wrapper .prod-info .prod-info-inner .prod-desc{
 	width: 325px;
 	padding-left: 40px;
+	padding-bottom: 20px;
 	color: #5a5a5a;
 }
 #checkout-body .wrapper .prod-info .prod-info-inner .prod-desc .prices div{
 	border-bottom: 1px solid #ededed;
-	padding: 15px 0;
+	padding: 7px 0;
 }
 #checkout-body .wrapper .prod-info .prod-info-inner .prod-desc .prices div:last-child{
 	border: none;
@@ -537,50 +665,179 @@ form .form-container .input-holder .card-logos {
 /*
 ** >> Thank You Page
 */
-#thankyou-body{
-	background: url(../img/ty-bg.jpg) top center no-repeat;
-}
-#thankyou-body .wrapper{
-	width: 700px;
-	margin: 0 auto;
-	background: #fff;
-	border-left: 1px solid #dedede;
-	border-right: 1px solid #dedede;
-}
 #thankyou-body .wrapper .header .header-inner{
-	padding: 35px;
+	width: 75%;
 }
 #thankyou-body .wrapper .thankyou-inner{
-	padding: 0 35px;
+	padding: 55px 35px;
 }
 #thankyou-body .wrapper .thankyou-info{
 	width: 350px;
 	display: inline-block;
 	padding-left: 40px;
 }
+#thankyou-body .wrapper .thankyou-inner .prod{
+	vertical-align: top;
+}
 #thankyou-body .wrapper .thankyou-info .order-id{
 	padding: 20px 0;
 }
-#thankyou-body .wrapper .thankyou-info .thankyou-prices div{
+#thankyou-body .wrapper .thankyou-info .thankyou-prices div.prices{
 	border-bottom: 1px solid #ededed;
 	padding: 15px 0;
 }
 #thankyou-body .wrapper .thankyou-info .thankyou-prices div:last-child{
 	border: none; 
 }
-#thankyou-body .wrapper .thankyou-info .thankyou-prices div p{
+#thankyou-body .wrapper .thankyou-info .thankyou-prices div.prices p{
 	display: inline-block;
 }
-#thankyou-body .wrapper .thankyou-info .thankyou-prices div p:last-child{
+#thankyou-body .wrapper .thankyou-info .thankyou-prices div.prices p:last-child{
 	float: right;
 	text-align: right;
-}
-#thankyou-body .wrapper .terms{
-	padding: 0 30px;
-	font-size: 
 }
 /*
 ** >> Upsell Page
 */
-#upsell-body{}
-#upsell-body .wrapper{}
+#upsell-body .wrapper h2,
+#upsell-body .wrapper h3,
+#upsell-body .wrapper p{
+	text-align: center;
+}
+#upsell-body .wrapper .terms p{
+	text-align: left;
+}
+#upsell-body .wrapper .upsell-inner .upsell-inner-header{
+	padding: 25px 0;
+}
+#upsell-body .wrapper .upsell-inner .upsell-inner-header h3{
+	color: #ff0000;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 27px;
+}
+#upsell-body .wrapper .upsell-inner .upsell-link .upsell-link-inner{
+	background: url(../img/upsell-link-bg.jpg) top center no-repeat;
+	width: 475px;
+	height: 245px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+}
+#upsell-body .wrapper .upsell-inner .upsell-link .upsell-link-inner .prod{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+#upsell-body .wrapper .upsell-inner .upsell-link .upsell-link-inner .upsell-link-content{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	color: #043c8f;
+}
+#upsell-body .wrapper .upsell-inner form{
+	border: none;
+}
+#upsell-body .wrapper .upsell-inner form .upsell-link .upsell-link-inner  .upsell-link-content p:first-child{
+	margin-bottom: 10px;
+	font-size: 17px;
+}
+#upsell-body .wrapper .upsell-inner form .upsell-link .upsell-link-inner  .upsell-link-content p img.clock{
+	vertical-align: middle;
+	padding-right: 10px;
+}
+#upsell-body .wrapper .upsell-inner form .upsell-link .upsell-link-inner  .upsell-link-content p:nth-child(2){
+	font-size: 22px;	
+}
+#upsell-body .wrapper .upsell-inner form .upsell-link .upsell-link-inner  .upsell-link-content p:nth-child(3){
+	font-size: 21px;
+	margin-bottom: 15px;
+}
+#upsell-body .wrapper .upsell-inner form .upsell-link .upsell-link-inner  .upsell-link-content p:nth-child(4),
+#upsell-body .wrapper .upsell-inner form .upsell-link .upsell-link-content p:last-child{
+	font-size: 18px;
+}
+#upsell-body .wrapper .upsell-inner form .upsell-link .upsell-link-inner  .upsell-link-content p span.turquoise{
+	color: #01bba3;
+}
+#upsell-body .wrapper .upsell-inner form .submission-button p{
+	font-size: 10px;
+}
+#upsell-body .wrapper .upsell-inner form .submission-button input[type="submit"]{
+	background: #00efc5;
+	font-size: 23px;
+	font-family: 'Montserrat', 'Open Sans', Arial;
+	font-weight: 700;
+	color: #000;
+	border-radius: 5px;
+	display: block;
+	border: none;
+	padding: 20px 20px;
+	box-shadow: 4px 4px 0 0 #7b7b7b;
+	cursor: pointer;
+	margin: 20px auto;
+	position: relative;
+}
+#upsell-body .wrapper .upsell-inner form input[type="submit"]:active{
+	box-shadow: 0px 0px 0 0 #7b7b7b;
+	top: 4px;
+}
+#upsell-body .wrapper .upsell-inner form .submission-button img.logos{
+	margin: 0 auto;
+	display: block;
+}
+#upsell-body .wrapper .upsell-inner form .submission-button img.lock{
+	vertical-align: middle;
+	padding-right: 5px;
+}
+#upsell-body .wrapper .upsell-inner .decline{
+	font-size: 12px;
+	color: #868686;
+	text-align: center;
+	padding: 25px 0;
+	display: block;
+}
+#upsell-body .wrapper .upsell-inner .decline img.x{
+	vertical-align: middle;
+	padding-right: 5px;
+}
+/*Related Styles*/
+#thankyou-body,
+#upsell-body{
+	background: url(../img/ty-bg.jpg) top center no-repeat;
+	color: #333333;
+}
+#thankyou-body .wrapper,
+#upsell-body .wrapper{
+	width: 700px;
+	margin: 0 auto;
+	background: #fff;
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+}
+#upsell-body .wrapper h2,
+#upsell-body .wrapper h3,
+#thankyou-body .wrapper h2,
+#thankyou-body .wrapper h3{
+	font-family: 'Open Sans', Arial;
+}
+#thankyou-body .wrapper .banner,
+#upsell-body .wrapper .banner{
+	margin-bottom: 0px;
+}
+#thankyou-body .wrapper .header .header-inner,
+#upsell-body .wrapper .header .header-inner{
+	padding: 35px;
+	border-bottom: 1px solid #ccc;
+}
+#thankyou-body .wrapper .header .header-inner h2,
+#upsell-body .wrapper .header .header-inner h2{
+	font-weight: bold;
+}
+#thankyou-body .wrapper .terms,
+#upsell-body .wrapper .terms{
+	padding: 0 30px;
+	font-size: 11px;
+	line-height: 18px;
+	color: #aaa;
+}
