@@ -171,19 +171,19 @@ form .form-container .input-holder .card-logos {
 	float: right;
 	margin-right: 25px;
 }
-.banner .demographic p,
-.banner .demographic img.flag{
+/* Steps */
+.demographic p,
+.demographic img.flag{
 	display: inline-block;
 }
-.banner .demographic p{
+.demographic p{
 	width: 230px;
 	font-weight: bold;
 	font-size: 14px;
 }
-.banner .demographic img.flag{
+.demographic img.flag{
 	margin-right: 10px;
 }
-/* Steps */
 .steps{
 	width: 295px;
     position: relative;
@@ -356,6 +356,28 @@ form .form-container .input-holder .card-logos {
 }
 #index-body .top{
 	height: 800px;
+	position: relative;
+}
+#index-body .top .demographic{
+	position: absolute;
+    top: 85px;
+    left: 375px;
+}
+#index-body .top .demographic .flag{
+	padding-left: 10px;
+}
+#index-body .top .demographic p{
+	text-align: right;
+}
+#index-body .top .logo{
+	position: absolute;
+    top: 165px;
+    left: 380px;
+}
+#index-body .top .prod{
+	position: absolute;
+    bottom: -45px;
+    left: -55px;
 }
 #index-body .wrapper form{
 	width: 313px;
@@ -433,13 +455,16 @@ form .form-container .input-holder .card-logos {
 	width: 100%;
 	height: 558px;
 	padding-top: 45px;
+	position: relative;
 }
 #index-body .wrapper #section-1 .points-container .points-inner{
 	width: 390px;
 	float: right;	
 }
-#index-body .wrapper #section-1 .points-container .points-inner .spotlight{
+#index-body .wrapper #section-1 .points-container .points-inner .spotlight-header{
 	position: absolute;
+    top: -34px;
+    right: 140px;
 }
 #index-body .wrapper #section-1 .points-container .points-inner h2{
 	font-size: 20px;
@@ -514,6 +539,11 @@ form .form-container .input-holder .card-logos {
 	margin-right: -50px;
 	margin-top: -110px;
 }
+#index-body .wrapper #section-2 .exclusive .trial-image .prod{
+	position: absolute;
+    top: 165px;
+    right: 117px;
+}
 #index-body .wrapper #section-2 .spotlight .spotlight-content{
 	width: 494px;	
 }
@@ -557,6 +587,17 @@ form .form-container .input-holder .card-logos {
 #index-body .wrapper .bottom h2.section-header span:after{
     border-top: 50px solid #ed145b;
     border-right: 25px solid transparent;
+}
+#index-body .wrapper .bottom .prod{
+	position: absolute;
+}
+#index-body .wrapper .bottom .logo{
+	position: absolute;
+	right: 40px;
+	top: 80px;
+}
+#index-body .wrapper .bottom .badge{
+	position: absolute;
 }
 /*
 ** >> Checkout Page & After Downsell Page
@@ -611,6 +652,15 @@ form .form-container .input-holder .card-logos {
 	color: #5a5a5a;
 	font-size: 14px;
 }
+#checkout-body .wrapper .info .info-content p span.green{
+	color: #66cc33;
+}
+#checkout-body .wrapper .info .info-content p span.red{
+	color: #ff0000;
+}
+#checkout-body .wrapper .info .info-content p span.pink{
+	color: #ed145b;
+}
 #checkout-body .wrapper .info .info-content p:first-child{
 	font-size: 17px;
 }
@@ -654,6 +704,9 @@ form .form-container .input-holder .card-logos {
 }
 #checkout-body .wrapper .prod-info .prod-info-inner .prod-desc .prices p:last-child{
 	float: right;
+}
+#checkout-body .wrapper .prod-info .prod-info-inner .prod-desc img.delivery{
+	padding-top: 10px;
 }
 #checkout-body .wrapper .prod-info .arrow{
 	position: relative;
