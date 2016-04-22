@@ -28,3 +28,16 @@ JUMBLEBERRY TEMPLATE STANDARD
        Coming soon.
    ```
     
+#### HTML, CSS, and JS STANDARDS
+
+#### HTML
+    General
+      - update all footer and head naming
+    index.html
+      - leave form, and class="cta" templating
+      - sections templating will need updating depending on design
+      - fill in any alt tags with instances of [PRODUCT NAME] or [COUNTRY]
+    checkout.html
+      - fill in any alt tags with instances of [PRODUCT NAME] or [COUNTRY]
+      - product naming can be update in main.js(explained in JS)
+      - do not change template structure
