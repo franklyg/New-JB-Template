@@ -65,6 +65,32 @@ $(function(){
     	$('form .hidden-fields').css('display' , 'block')
     }
 
+    // Form Validation  Styles
+    $('.active').val();
+    $('.active').focus();
+
+    $(':input[type="text"], select').on('focus', function(){
+        $(this).addClass('active');
+    }).on('blur', function(){
+        $(this).removeClass('active');
+    });
+    
+    //Steps Animation
+    if($('body').attr('id') == 'checkout-body'){
+        $('.steps .bar .slider').css({
+            'width': '139px'
+        });
+        $('.steps .step-2 .step-inner p').addClass('current');
+    }
+    if($('body').attr('id') == 'thankyou-body' || $('body').attr('id') == 'upsell-body'){
+        $('.steps .bar .slider').css({
+            'width': '300px'
+        });
+        $('.steps .step-2 .step-inner p, .steps .step-3 .step-inner p').addClass('current')
+    }
+
+
+
 })
 $(function(){
 	var source   = $(".product-description").html();

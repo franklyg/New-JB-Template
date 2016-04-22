@@ -30,8 +30,31 @@ h1{
 h2{
 	font-family: 'Montserrat', 'Open Sans', Arial;
 }
-h3{}
-
+.active{
+    box-shadow: 0 4px 0px -1px #4cdbd9;
+}
+.error{
+    box-shadow: 0 4px 0px -1px #ff0000;
+    background: url('../img/not-valid.png') center right no-repeat #fff;
+}
+.valid{
+	background: url('../img/valid.png') center right no-repeat #fff;
+}
+.error,
+.valid{
+    background-position: 97%;
+}
+select .error,
+select .valid{
+    background-position: 95%;
+}
+#form form .text{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 41px;
+    margin-bottom: -1px;
+}
 #checkout-body .wrapper .terms,
 #thankyou-body .wrapper .terms{
 	font-size: 11px;
@@ -194,7 +217,6 @@ form .form-container .input-holder .card-logos {
 .steps .step{
 	position: absolute;
 	top: -11px;
-	z-index: 10;
 	margin: 0px;
 }
 .steps .step .step-inner{
@@ -214,6 +236,11 @@ form .form-container .input-holder .card-logos {
 	width: 100%;
     height: 100%;
     box-shadow: 0 1px 1px 0px #000;
+    transition: background .5s;
+}
+.steps .step .step-inner p{
+	position: relative;
+	z-index: 11;
 }
 .steps .step-1{
 	left: -24px;
@@ -255,6 +282,13 @@ form .form-container .input-holder .card-logos {
 }
 .steps .bar .slider{
 	position: absolute;		
+	background: #ed145b;
+	height: 3px;
+    z-index: 10;
+    top: 1px;
+    left: -1px;
+    width: 0px;
+    transition: width .8s;
 }
 /*
 ** >> Landing Page
@@ -427,6 +461,7 @@ form .form-container .input-holder .card-logos {
 }
 #index-body .wrapper form .form-container .input-holder input[type="submit"]{
 	margin:10px 0 20px 0;
+	font-size: 22px;
 }
 #index-body .wrapper form .form-container .input-holder .card-logos{
 	padding-bottom: 0px;
@@ -590,6 +625,8 @@ form .form-container .input-holder .card-logos {
 }
 #index-body .wrapper .bottom .prod{
 	position: absolute;
+	top: 80px;
+	left: 420px;
 }
 #index-body .wrapper .bottom .logo{
 	position: absolute;
@@ -598,6 +635,9 @@ form .form-container .input-holder .card-logos {
 }
 #index-body .wrapper .bottom .badge{
 	position: absolute;
+	top: 160px;
+	left: 320px;
+	z-index: 10;
 }
 /*
 ** >> Checkout Page & After Downsell Page
