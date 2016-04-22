@@ -1,11 +1,16 @@
 
 $(function(){
-	$('#index-body .cta a').on('click', function(){
+    //Click back to top
+	$('#index-body .cta a, #index-body .wrapper .bottom a').on('click', function(){
 		$('html, body').animate({
 			scrollTop: 0
 		});
 	});
-
+    //Reminder Pop up
+    $('#index-body .top .reminder .reminder-inner').delay(3000).animate({
+        'top' : '0px',
+        'opacity' : 1
+    }); 
 	
 	// Landing Page Counter
 	// var counter = 599;
@@ -89,6 +94,12 @@ $(function(){
         $('.steps .step-2 .step-inner p, .steps .step-3 .step-inner p').addClass('current')
     }
 
+    //Downsell close
+    $('.popover .popover-graphics img.close').on('click', function(){
+        $('.popover').css({
+            'visibility' : 'hidden'
+        })
+    });
 
 
 })

@@ -66,10 +66,11 @@ footer{
 	padding: 60px 0;
 }
 footer p{
-	font-size: 12px;
+	font-size: 11px !important;
 	text-align: center;
 }
 footer p a{
+	font-size: 11px !important;
 	color: #000;
 	text-decoration: none;
 }
@@ -290,6 +291,35 @@ form .form-container .input-holder .card-logos {
     width: 0px;
     transition: width .8s;
 }
+.popover{
+	position: fixed;
+	width: 100%; height: 100%;
+	top: 0px; left: 0px;
+	z-index: 100;
+	visibility: hidden;
+}
+.popover .popover-graphics{
+	width: 700px;
+	height: 450px;
+	margin: 100px auto;
+	position: relative;
+	z-index: 110;
+}
+.popover .popover-graphics img.close{
+	position: absolute;
+	top: 15px;right: 15px;
+}
+.popover .popover-graphics img.prod,
+.popover .popover-graphics img.badge{
+	position: absolute;
+}
+.popover .overlay{
+	position: absolute;
+	background: #000;
+	opacity: .7;
+	width: inherit; height: inherit;
+	left: inherit; top: inherit;
+}
 /*
 ** >> Landing Page
 */
@@ -352,7 +382,8 @@ form .form-container .input-holder .card-logos {
 	font-size: 16px;
 	letter-spacing: 2.3px;
 }
-#index-body .cta a{
+#index-body .cta a,
+ #index-body .wrapper .bottom a{
 	background: #00efc5;
 	font-weight: bold;
 	font-size: 22px;
@@ -364,7 +395,8 @@ form .form-container .input-holder .card-logos {
 	text-decoration: none;
 	position: relative;
 }
-#index-body .cta a:active{
+#index-body .cta a:active,
+#index-body .wrapper .bottom a:active{
 	box-shadow: 0px 0px 0 0 #7b7b7b;
 	top: 4px;
 }
@@ -412,6 +444,24 @@ form .form-container .input-holder .card-logos {
 	position: absolute;
     bottom: -45px;
     left: -55px;
+}
+#index-body .top .reminder{
+    position: absolute;
+    bottom: 0px;
+    left: 368px;
+    overflow: hidden; 	
+}
+#index-body .top .reminder .reminder-inner{
+	font-family: 'Montserrat', Arial;
+	text-align: center;
+	color: #fff;
+	width: 	100%;
+    background: #595f70; 
+    font-size: 13px;
+    padding: 15px 35px;
+    position: relative;
+    top: 80px;
+    opacity: 0;
 }
 #index-body .wrapper form{
 	width: 313px;
@@ -639,6 +689,36 @@ form .form-container .input-holder .card-logos {
 	left: 320px;
 	z-index: 10;
 }
+#index-body .wrapper .bottom a{
+	position: absolute;
+	bottom: 60px;
+	right: 60px;
+}
+#index-body .wrapper .bottom a:active{
+	top: 300px;
+}
+#index-body .popover .popover-graphics a{
+	background: url(../img/lp-downsell.jpg) top center no-repeat;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+#index-body .popover .popover-graphics .prod{
+	bottom: 103px;
+    right: 165px;
+    width: 185px;
+}
+#index-body .terms{
+    text-align: center;
+	width: 800px;
+	margin: 40px auto 0 auto;
+
+}
+#index-body .terms p{
+	font-family: 'Open Sans', Arial;
+	font-size: 11px;
+	line-height: 16px;
+}
 /*
 ** >> Checkout Page & After Downsell Page
 */
@@ -755,19 +835,43 @@ form .form-container .input-holder .card-logos {
 #checkout-body .wrapper .terms{
 	padding-left: 20px;
 }
+#checkout-body .popover .popover-graphics a{
+	background: url(../img/cp-downsell.jpg) top center no-repeat;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+#checkout-body .popover .popover-graphics .prod{
+	bottom: 90px;
+    right: 60px;
+    width: 185px;
+}
+#checkout-body .popover .popover-graphics .badge{
+	right: 40px;
+	bottom: 160px;
+	z-index: 10;
+}
 /*
 ** >> Thank You Page
 */
 #thankyou-body .wrapper .header .header-inner{
 	width: 75%;
 }
+#thankyou-body .wrapper .header .header-inner span.pink,
+#thankyou-body .wrapper .thankyou-inner h2{ 
+	color: #ed145b;
+	font-weight: bold;
+}
 #thankyou-body .wrapper .thankyou-inner{
-	padding: 55px 35px;
+	padding: 51px 35px;
 }
 #thankyou-body .wrapper .thankyou-info{
 	width: 350px;
 	display: inline-block;
 	padding-left: 40px;
+}
+#thankyou-body .wrapper .thankyou-info .thankyou-prices .product-content{
+	margin-bottom: -35px;
 }
 #thankyou-body .wrapper .thankyou-inner .prod{
 	vertical-align: top;
@@ -788,6 +892,10 @@ form .form-container .input-holder .card-logos {
 #thankyou-body .wrapper .thankyou-info .thankyou-prices div.prices p:last-child{
 	float: right;
 	text-align: right;
+}
+#thankyou-body .wrapper .terms{
+	padding: 30px 30px 0 30px !important;
+	border-top: 1px solid #ccc;
 }
 /*
 ** >> Upsell Page
