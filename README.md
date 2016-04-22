@@ -57,12 +57,13 @@ JUMBLEBERRY TEMPLATE STANDARD
     DONT NOT TOUCH THIS
     
     main.css
-    
-    
+
+
 
 #### JS
     main.js
     All auto scroll to top function on landing page on click of call to action.
+
     ```html
       $('#index-body .cta a, #index-body .wrapper .bottom a').on('click', function(){
         $('html, body').animate({
@@ -72,6 +73,7 @@ JUMBLEBERRY TEMPLATE STANDARD
     ```
     The counter function for the landing page.
     This is located on the top of the form counting down at a rapid pace on the. Currently set to 7 miliseconds, but can be adjusted in the invertalId variable.
+    
     ```html
     var one        = 0;
     var ten        = 0;
