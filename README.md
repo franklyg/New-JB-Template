@@ -60,12 +60,23 @@ JUMBLEBERRY TEMPLATE STANDARD
     Page Specific Styles:
 
     All pages have a specific ID assigned to theme: #index-body, #checkout-body, #thankyou-body, #upsell-body.
-    
+
+
     Forms:
 
     Both checkout and checkout-after-downsell have the same form styles. 
 
     Landing page form styles have slightly different styles under the #index-body.
+
+    Steps:
+
+    Style can be located under the /*Steps*/ comment in the styles.
+
+    Based upon design, what needs to be tweaked is: .steps .step .step-inner p.current, and .steps .bar .slider. Changing the background on these two CSS path is the only thing you'll need to adjust, along with the styles applied in the main.js, which can be located below in the JavaScript documentation. 
+
+    Downsell Popover:
+
+    Can be located under /*Pop over*/ comment. All downsell styles don't need to be tweaked. Just updating the background image is the only recquirement.
 
     Landing Page:
 
@@ -75,13 +86,13 @@ JUMBLEBERRY TEMPLATE STANDARD
 
     Checkout Page and Thank You Page:
 
-    All styles except for the .prod, and .logo can be tweaked.
+    All styles except for the #thankyou-body background, .prod, and .logo can be tweaked.
 
     Upsell Page:
 
-    All styles except for .prod and .logo can be tweaked.
+    All styles except for #upsell-body background, .prod and .logo can be tweaked.
 
-    
+
 #### JS
 
     main.js
