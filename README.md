@@ -40,17 +40,16 @@ JUMBLEBERRY TEMPLATE STANDARD
       If given a different PSD please update, and code all sections.
 
     checkout.html
-      Product naming can be update in main.js(explained in JS)
+      Product naming can be updated in main.js(explained in JS)
       DO NOT change template structure 
 
     thankyou.html
       DO NOT change template structure 
-      Product naming can be update in main.js(explained in JS)    
+      Product naming can be updated in main.js(explained in JS)    
 
     upsell.html
-      DO NOT change template structure .
-      Product naming can be update in main.js(explained in JS).
-      Update all proudct naming.
+      DO NOT change template structure.
+      Update all proudct naming and images.
 
 #### CSS
     reset.css
@@ -58,10 +57,35 @@ JUMBLEBERRY TEMPLATE STANDARD
     
     main.css
 
+    Page Specific Styles:
 
+    All pages have a specific ID assigned to theme: #index-body, #checkout-body, #thankyou-body, #upsell-body.
+    
+    Forms:
 
+    Both checkout and checkout-after-downsell have the same form styles. 
+
+    Landing page form styles have slightly different styles under the #index-body.
+
+    Landing Page:
+
+    All section styles can be found under the /*Section Styles*/ comment in the styles.
+
+    All positioning of logos and products can be seen and are used under the class name of .prod and .logo, and can be tweaked based upon design.
+
+    Checkout Page and Thank You Page:
+
+    All styles except for the .prod, and .logo can be tweaked.
+
+    Upsell Page:
+
+    All styles except for .prod and .logo can be tweaked.
+
+    
 #### JS
+
     main.js
+
     All auto scroll to top function on landing page on click of call to action.
 
     ```html
@@ -73,7 +97,7 @@ JUMBLEBERRY TEMPLATE STANDARD
     ```
     The counter function for the landing page.
     This is located on the top of the form counting down at a rapid pace on the. Currently set to 7 miliseconds, but can be adjusted in the invertalId variable.
-    
+
     ```html
     var one        = 0;
     var ten        = 0;
