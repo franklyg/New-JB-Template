@@ -3,8 +3,8 @@ var exit_pop_alert_text = "\nWAIT! \n\n" +
     "LIMITED TIME SPECIAL OFFER!\n\nDue to a HIGH DEMAND we can only guarantee availability TODAY." +
     "\n\nClick *Cancel* or *Stay* below to accept this offer.\n\n";
 function setPromo() {
-    $("#popover").css('visibility', 'visible');
-    $("#popup_overlay").show();
+    $(".popover").css('visibility', 'visible');
+    $(".popup_overlay").show();
 }
 function PopIt() {
     exit_pop_do_autoclick();
@@ -60,14 +60,14 @@ $(document).ready(function () {
 
     //Shadowbox footer links method
     $("body").on('click', '.terms-link', function (e) {
-        $.colorbox({width: "80%", height: "80%", closeButton:true, href: "page-terms.php"});
+        $.colorbox({width: "80%", height: "80%", closeButton:true, href: "terms.php"});
     });
     $("body").on('click', '.privacy-link', function (e) {
-        $.colorbox({width: "80%", height: "80%", closeButton:true, href: "page-privacy.php"});
+        $.colorbox({width: "80%", height: "80%", closeButton:true, href: "privacy.php"});
     });
 
     $("body").on('click', '.contact-link', function (e) {
-        $.colorbox({width: "80%", height: "80%", closeButton:true, href: "page-contact.php"});
+        $.colorbox({width: "80%", height: "80%", closeButton:true, href: "contact.php"});
     });
 
     //Billing same as shipping - Desktop/Radio Buttons
@@ -115,16 +115,28 @@ $(document).ready(function () {
 });
 
 //CVV Method to close tool-tip popup
-$(document).mouseup(function (e)
-{
+function toggleTooltip (){
+    $('#toolTipLayer').toggle();
+
+    function fadeOut1(){
+        $('#toolTipLayer').fadeOut();
+    }
+    setTimeout(fadeOut1, 2500);
+}
+//CVV Method to close tool-tip popup
+$(document).mouseup(function (e) {
+
     var container = $("#toolTipLayer");
+    container.fadeOut();
 
     if (!container.is(e.target) // if the target of the click isn't the container...
         && container.has(e.target).length === 0) // ... nor a descendant of the container
+
     {
-        container.fadeOut();
+
     }
 });
+
 
 //downsell from LP action
 function RedirectToLPDownsell() {
@@ -369,7 +381,7 @@ function checkcustomerform() {
     }
     else if (($("#fields_state").val() == "")) {
         error++;
-        toastr["error"]("Please select province");
+        toastr["error"]("Please select state/province");
 
     }
     else if ($.trim($("#fields_zip").val()) == "") {
@@ -379,7 +391,7 @@ function checkcustomerform() {
     }
     else if ($("#fields_zip").val().length < 6) {
         error++;
-        toastr["error"]("Please enter a valid postal code.");
+        toastr["error"]("Please enter a valid zip/postal code.");
         return false;
     }
     else if ($.trim($("#fields_phone").val()) == "") {
@@ -452,7 +464,7 @@ function checkbillingform() {
         }
         else if (($("#fields_state").val() == "")) {
             error++;
-            toastr["error"]("Please select province");
+            toastr["error"]("Please select state/province");
             return false;
         }
         else if ($.trim($("#fields_zip").val()) == "") {
@@ -463,7 +475,7 @@ function checkbillingform() {
         else if($("#fields_zip").val().length < 5)
         {
             error++;
-            toastr["error"]("Please enter a valid postal code.");
+            toastr["error"]("Please enter a valid zip/postal code.");
             return false;
         }
         else if ($.trim($("#fields_email").val()) == "") {
@@ -535,7 +547,7 @@ function checkbillingform() {
         }
         else if (($("#billing_state").val() == "")) {
             error++;
-            toastr["error"]("Please select province");
+            toastr["error"]("Please select state/province");
             return false;
         }
         else if ($.trim($("#billing_postcode").val()) == "") {
@@ -546,7 +558,7 @@ function checkbillingform() {
         else if($("#billing_postcode").val().length < 5)
         {
             error++;
-            toastr["error"]("Please enter a valid zip code.");
+            toastr["error"]("Please enter a valid zip/postal code.");
             return false;
         }
     }

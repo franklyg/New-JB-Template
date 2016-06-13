@@ -23,10 +23,36 @@ JUMBLEBERRY TEMPLATE STANDARD
 
 
 ####Features
- 
-   ```
-       Coming soon.
-   ```
+
+   Validation Rules
+
+   - found in jblib/ui.js, you can adjust the validation rules for each form
+   
+   `
+      
+       rules: {
+           fields_fname: "required",
+           fields_lname: "required",
+           fields_address1: "required",
+           fields_city: "required",
+           fields_country: "required",
+           fields_zip: {
+               required: true,
+               maxlength: 6,
+               minlength: 6
+           },
+           fields_state: "required",
+           fields_phone: {
+               required: true,
+               maxlength: 10,
+               minlength: 10
+           },
+           fields_email: {
+               required: true,
+               email: true
+           }
+       }
+
     
 #### HTML, CSS, and JS STANDARDS
 

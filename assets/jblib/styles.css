@@ -27,22 +27,10 @@ footer a {
     padding-bottom: 10px;
 }
 .n-select{
-    height: 30px;
-    width: 176px;
-    margin-bottom: 12px;
-    margin-right: 0px;
-    text-indent: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+
 }
 .s-select{
-    height: 30px;
-    width: 84px;
-    margin-bottom: 12px;
-    margin-right: -3px;
-    text-indent: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+
 }
 
 /**
@@ -138,7 +126,7 @@ footer a {
     left: 0px;
 }
 #spinner-content{
-    width: 200px;
+    width: 250px;
     margin: 20% auto;
     position: relative;
     z-index: 3;

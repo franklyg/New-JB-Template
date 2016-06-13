@@ -139,7 +139,22 @@ form .form-container .input-holder a{
     display: inline-block;
     text-align: center;
 }
-form .form-container .input-holder select{}
+form .form-container .input-holder select{
+	height: 32px;
+	border-radius: 5px;
+	display: inline-block;
+	width: 70%;
+	border: 1px solid #ccc;
+	padding: 0 10px;
+}
+form .form-container .input-holder select.s-select{
+	height: 32px;
+	border-radius: 5px;
+	display: inline-block;
+	width: 34%;
+	border: 1px solid #ccc;
+	padding: 0 10px;
+}
 form .form-container .button{
 	padding: 15px 0;
 }
@@ -486,6 +501,10 @@ form .form-container .input-holder .card-logos {
     font-weight: bold;
 }
 #index-body .wrapper form .form-container .input-holder input[type="text"]{
+	margin-bottom: 14px;
+	height: 31px;
+}
+#index-body .wrapper form .form-container .input-holder select{
 	margin-bottom: 14px;
 	height: 31px;
 }
@@ -870,6 +889,9 @@ form .form-container .input-holder .card-logos {
 	padding-left: 40px;
 }
 #thankyou-body .wrapper .thankyou-info .thankyou-prices .product-content{
+	margin-bottom: -35px;
+}
+#thankyou-body .wrapper .thankyou-info .thankyou-prices .product-content2{
 	margin-bottom: -35px;
 }
 #thankyou-body .wrapper .thankyou-inner .prod{
