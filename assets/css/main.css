@@ -869,6 +869,19 @@ form .form-container .input-holder .card-logos {
 	bottom: 160px;
 	z-index: 10;
 }
+#checkout-body #shipping-title {
+	text-align: left;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+#checkout-body #billing-title {
+	text-align: left;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+#checkout-body .downsell-form {
+	display: none;
+}
 /*
 ** >> Thank You Page
 */

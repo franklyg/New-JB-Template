@@ -71,6 +71,7 @@ $(function () {
         $('form .hidden-fields').css('display', 'block')
     }
 
+    //Load common footer file across all pages
     $(function(){
         $("#footer").load("footer.html");
     });
@@ -105,8 +106,7 @@ $(function () {
             'visibility': 'hidden'
         })
     });
-
-
+    
 })
 
 

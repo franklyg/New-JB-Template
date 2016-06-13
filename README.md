@@ -24,34 +24,53 @@ JUMBLEBERRY TEMPLATE STANDARD
 
 ####Features
 
-   Validation Rules
+Validation Rules
 
    - found in jblib/ui.js, you can adjust the validation rules for each form
-   
-   `
-      
-       rules: {
-           fields_fname: "required",
-           fields_lname: "required",
-           fields_address1: "required",
-           fields_city: "required",
-           fields_country: "required",
-           fields_zip: {
-               required: true,
-               maxlength: 6,
-               minlength: 6
-           },
-           fields_state: "required",
-           fields_phone: {
-               required: true,
-               maxlength: 10,
-               minlength: 10
-           },
-           fields_email: {
-               required: true,
-               email: true
-           }
-       }
+   - field names refer to the form field ids
+```javascript
+{
+    rules: {
+        fields_fname: "required",
+        fields_lname: "required",
+        fields_address1: "required",
+        fields_city: "required",
+        fields_country: "required",
+        fields_zip: {
+            required: true,
+            maxlength: 6,
+            minlength: 6
+        },
+        fields_state: "required",
+        fields_phone: {
+            required: true,
+            maxlength: 10,
+            minlength: 10
+        },
+        fields_email: {
+            required: true,
+            email: true
+        }
+    }
+```
+
+Shadowbox Popup - Terms, Privacy Policy, Contact Links
+    
+- replace terms.php, privacy.php, contact.php with relative links to footer files
+    
+    
+```javascript
+        $("body").on('click', '.terms-link', function (e) {
+            $.colorbox({width: "80%", height: "80%", closeButton:true, href: "terms.php"});
+        });
+        $("body").on('click', '.privacy-link', function (e) {
+            $.colorbox({width: "80%", height: "80%", closeButton:true, href: "privacy.php"});
+        });    
+        $("body").on('click', '.contact-link', function (e) {
+            $.colorbox({width: "80%", height: "80%", closeButton:true, href: "contact.php"});
+        });
+```
+  
 
     
 #### HTML, CSS, and JS STANDARDS

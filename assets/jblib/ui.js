@@ -20,7 +20,7 @@ function UnPopIt(){}
 
 //Disable Downsell On Certain Actions
 $(document).ready(function() {
-    if (window.location.search.indexOf('[?&]downsell') != -1 || window.location.href.indexOf("/thank-you.php") > -1) {
+    if (window.location.search.indexOf('[?&]downsell') != -1 || window.location.href.indexOf("/thankyou.php") > -1) {
         return false;
     } else {
         window.onbeforeunload = PopIt;
